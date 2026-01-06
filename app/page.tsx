@@ -42,7 +42,6 @@ export default function Portfolio() {
       <div className="pointer-events-none">
         <InfiniteGridBackground />
       </div>
-
       <div className="relative z-10 pointer-events-auto">
         {/* Navigation */}
         <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-background/80 border-b border-border/40">
