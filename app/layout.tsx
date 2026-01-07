@@ -12,8 +12,7 @@ export const metadata: Metadata = {
   description:
     "Award-winning Energy and Power Systems Engineer advancing renewable energy integration across Africa. Specializing in solar PV, BESS, and sustainable power solutions.",
   keywords: ["Gerald Gundani", "Energy Engineer", "Solar Engineer", "Renewable Energy", "Zimbabwe", "BESS", "Solar PV"],
-  authors: [{ name: "Gerald Gundani" }],
-  generator: "v0.app",
+  authors: [{ name: "Anesu Ndoro" }],
   icons: {
     icon: [
       {

@@ -123,8 +123,10 @@ export default function Portfolio() {
                 </div>
                 <div className="flex gap-4 flex-wrap justify-center">
                   <Button size="lg" className="gap-2 group">
-                    <Download className="h-4 w-4 group-hover:animate-bounce" />
-                    Download CV
+                    <Link href="/Gerald Gundani Curriculum Vitae.pdf" className="flex gap-4 flex-wrap justify-center" target="_blank" rel="noopener noreferrer">
+                     <Download className="h-4 w-4 group-hover:animate-bounce" />
+                      Download CV</Link>
+                     
                   </Button>
                   <Button size="lg" variant="outline" asChild>
                     <Link href="#contact">Contact Me</Link>
