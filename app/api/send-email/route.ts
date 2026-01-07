@@ -17,6 +17,9 @@ export async function POST(request: NextRequest) {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,
       },
+      tls: {
+        rejectUnauthorized: false,
+      },
     })
 
     // Email to Gerald

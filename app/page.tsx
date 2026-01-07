@@ -52,7 +52,7 @@ export default function Portfolio() {
               className="flex items-center gap-3"
             >
               <Image
-                src="/images/gemini-generated-image-efeimeefeimeefei.png"
+                src="/images/logo.webp"
                 alt="Logo"
                 width={40}
                 height={40}
@@ -91,7 +91,7 @@ export default function Portfolio() {
         {/* Hero Section with Banner */}
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0">
-            <Image src="/images/banner.png" alt="Banner" fill className="object-cover opacity-20" priority />
+            <Image src="/images/banner.webp" alt="Banner" fill className="object-cover opacity-20" priority />
             <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/80 to-background" />
           </div>
 
@@ -105,7 +105,7 @@ export default function Portfolio() {
                 className="relative"
               >
                 <div className="relative w-64 h-64 rounded-full overflow-hidden border-4 border-primary shadow-2xl">
-                  <Image src="/images/my-20image.jpg" alt="Gerald Gundani" fill className="object-cover" priority />
+                  <Image src="/images/my-20image.webp" alt="Gerald Gundani" fill className="object-cover" priority />
                 </div>
               </motion.div>
 
@@ -229,35 +229,35 @@ export default function Portfolio() {
                     system: "100 kW ground mount",
                     location: "Mapinga, Zimbabwe",
                     description: "To power tobacco irrigation pivots",
-                    image: "/solar-farm-ground-mount-zimbabwe-tobacco.jpg",
+                    image: "/images/collenso.webp",
                   },
                   {
                     title: "Deborah Farm",
                     system: "100 kW ground mount",
                     location: "Darwendale, Zimbabwe",
                     description: "To power tobacco irrigation pivots",
-                    image: "/solar-panels-ground-mount-irrigation.jpg",
+                    image: "/images/deborahpowerroom.webp",
                   },
                   {
                     title: "Bolden Farm",
                     system: "100 kW ground mount",
                     location: "Darwendale, Zimbabwe",
                     description: "To power tobacco irrigation pivots",
-                    image: "/commercial-solar-installation-farm.jpg",
+                    image: "/images/boldenpanels.webp",
                   },
                   {
                     title: "Rosscommon Farm",
                     system: "100 kW ground mount",
                     location: "Norton, Zimbabwe",
                     description: "To power tobacco irrigation pivots",
-                    image: "/utility-solar-farm-installation.jpg",
+                    image: "/images/roscommonpanels.webp",
                   },
                   {
                     title: "Macheke Farm",
                     system: "30 kW roof mount",
                     location: "Macheke, Zimbabwe",
                     description: "To power tobacco irrigation pivots",
-                    image: "/rooftop-solar-panels-commercial-building.jpg",
+                    image: "/images/30kVAinverter.webp",
                   },
                 ].map((project, i) => (
                   <motion.div
@@ -383,7 +383,7 @@ export default function Portfolio() {
                   {
                     title: "Smart Parcel Locker with Solar Back-up Power",
                     description: "For last mile delivery with integrated battery energy storage system",
-                    image: "/smart-locker-solar-battery-system.jpg",
+                    image: "/images/smart.webp",
                   },
                   {
                     title: "Real Time Vibration Analysis",
@@ -400,7 +400,7 @@ export default function Portfolio() {
                     whileHover={{ y: -8 }}
                   >
                     <Card className="overflow-hidden h-full backdrop-blur-sm bg-card/50 border-border/40 hover:border-primary/40 transition-all">
-                      <div className="relative h-48 overflow-hidden">
+                      <div className="relative h-80 overflow-hidden">
                         <Image
                           src={project.image || "/placeholder.svg"}
                           alt={project.title}
