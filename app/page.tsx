@@ -1279,7 +1279,7 @@ export default function Portfolio() {
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <div className="flex items-center gap-3">
                 <Image
-                  src="/images/gemini-generated-image-efeimeefeimeefei.png"
+                  src="/images/logo.webp"
                   alt="Logo"
                   width={32}
                   height={32}
