@@ -17,17 +17,17 @@ export const metadata: Metadata = {
     icon: [
       {
         url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
+        sizes: "32x32",
+        type: "image/png",
       },
       {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
+        url: "/icon-light-16x16.png",
+        sizes: "16x16",
+        type: "image/png",
       },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
+      { url: "/favicon.ico" },
     ],
+    shortcut: "/favicon.ico",
     apple: "/apple-icon.png",
   },
 }

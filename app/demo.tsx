@@ -1,5 +1,5 @@
-import Component from "@/components/ui/infinite-grid-integration";
+import { InfiniteGridBackground } from "@/components/ui/infinite-grid-background"
 
 export default function DemoOne() {
-  return <Component />;
+  return <InfiniteGridBackground />
 }

@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { motion } from "framer-motion"
+import { motion, MotionConfig } from "framer-motion"
 import {
   Moon,
   Sun,
@@ -38,11 +38,12 @@ export default function Portfolio() {
   const toggleTheme = () => setThemeColor(themeColor === "light" ? "dark" : "light")
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="pointer-events-none">
-        <InfiniteGridBackground />
-      </div>
-      <div className="relative z-10 pointer-events-auto">
+    <MotionConfig reducedMotion="user">
+      <div className="min-h-screen bg-background">
+        <div className="pointer-events-none">
+          <InfiniteGridBackground />
+        </div>
+        <div className="relative z-10 pointer-events-auto">
         {/* Navigation */}
         <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-background/80 border-b border-border/40">
           <div className="container mx-auto px-4 py-4 flex items-center justify-between">
@@ -122,11 +123,16 @@ export default function Portfolio() {
                   Entrepreneur || Philanthropist || Volunteer
                 </div>
                 <div className="flex gap-4 flex-wrap justify-center">
-                  <Button size="lg" className="gap-2 group">
-                    <Link href="/Gerald Gundani Curriculum Vitae.pdf" className="flex gap-4 flex-wrap justify-center" target="_blank" rel="noopener noreferrer">
-                     <Download className="h-4 w-4 group-hover:animate-bounce" />
-                      Download CV</Link>
-                     
+                  <Button size="lg" className="gap-2 group" asChild>
+                    <Link
+                      href="/Gerald Gundani Curriculum Vitae.pdf"
+                      className="inline-flex items-center gap-2"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Download className="h-4 w-4 group-hover:animate-bounce" />
+                      Download CV
+                    </Link>
                   </Button>
                   <Button size="lg" variant="outline" asChild>
                     <Link href="#contact">Contact Me</Link>
@@ -1324,7 +1330,8 @@ export default function Portfolio() {
             </div>
           </div>
         </footer>
+        </div>
       </div>
-    </div>
+    </MotionConfig>
   )
 }
